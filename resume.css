@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #c7e3f2;
+}
+.container{
+    width: 550px;
+    height: 950px;
+    margin: 60px auto;
+}
+.profile{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 280px;
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+}
+.profile h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    padding: 10px;
+
+}
+.profile p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:20px;
+    color: lightslategray;
+    margin-top: 5px;
+    
+}
+.about{
+    background-color: #4299ff;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+
+}
+.about h3{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 0.5px solid rgba(255,255,255,0.259);
+}
+.about p{
+    padding: 10px;
+    color: rgba(255,255,255,0.831);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025rem;
+    font-size: 0.875em;
+    line-height: 1.75;
+    font-weight: 300
+}
+.education{
+    background-color:  #3288ed;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+.education h3{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.259);
+}
+.education ul{
+    list-style:none;
+    padding: 10px 0px;
+}
+.education li{
+    padding: 5px;
+    color: rgba(255,255,255,0.831);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.025rem;
+    font-size: 0.875em;
+    line-height: 1.75;
+    font-weight: 300
+}
+.contact{
+    background-color: #277de3;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+.contact h3{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.259);
+}
+
+.contact img{
+  display: inline;
+  margin: 0 0.125em;
+  padding: 0;
+  vertical-align: baseline;
+  width: 14px;
+  
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-weight: 500;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.259);
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+a:hover{
+    border: 1px solid rgba(255,255,255,0.259);
+    box-shadow:
+    inset 0 0 50px #fff,      /* inner white */
+    inset 20px 0 80px #f0f,   /* inner left magenta short */
+    inset -20px 0 80px #0ff,  /* inner right cyan short */
+    inset 20px 0 300px #f0f,  /* inner left magenta broad */
+    inset -20px 0 300px #0ff, /* inner right cyan broad */
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
+ 
+}
+
+
+@media screen and (min-width: 900px) {
+    .about{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;   
+    }
+    .about h3{
+        border-bottom: 0px;
+        margin-right: 25px;
+    }
+    .about p{
+        border-left: 1px solid rgba(255,255,255,0.259);
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .education{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start
+    }
+    .education h3{
+        border-bottom: 0px;
+    }
+    .education li{
+        border-left: 1px solid rgba(255,255,255,0.259);
+    }
+    .contact{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .contact h3{
+        border-bottom: 0px;
+        margin-left: 18px;
+    }
+    .contact div{
+        border-left: 1px solid rgba(255,255,255,0.259);
+        padding-left: 15px;
+        margin-right: 10px;
+    }
+    .contact a{
+        margin: 5px;
+    }
+  }
